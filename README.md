@@ -216,3 +216,29 @@ console.log(1,2,3,4,5,7,9)
 ```
 
 # Desistruturação
+A desistruturação é utilizado para extrair elementos de um array e principalmente de objetos.
+```javascript
+// em Array
+const frutas = ['banana','maça','laranja']
+// desistrituração
+let [fruta, fruta1] = frutas
+console.log(fruta)
+console.log(fruta1)
+// output: banana 
+// output: maça
+
+// em Objetos
+const pessoa = {nome: 'João', idade: 44, pais: 'Brasil', idioma: 'Português'}
+// desistruturação
+let { pais, idioma } = pessoa
+console.log(pais)
+console.log(idioma)
+
+// exemplo com função
+const localidade = pessoa => `${pessoa.nome} você mora no ${pessoa.pais}`
+console.log(localidade(pessoa))
+
+// exemplo mais direto e usual
+const localidade = ({nome, pais}) => `${nome} você mora no ${pais}`
+console.log(localidade(pessoa))
+```
