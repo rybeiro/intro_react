@@ -242,3 +242,10 @@ console.log(localidade(pessoa))
 const localidade = ({nome, pais}) => `${nome} você mora no ${pais}`
 console.log(localidade(pessoa))
 ```
+# REACT
+## Como criar um projeto
+```javascript
+// abra o terminal ou console
+// execute o comando
+npx create-react-app react_basico
+```
